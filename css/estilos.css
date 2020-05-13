@@ -1,11 +1,22 @@
 /* Aula inicial :D */
 body {
-  background-image: url('https://image.freepik.com/vetores-gratis/fundo-abstrato-azul-formas-geometricas_1035-17545.jpg');
+  background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/628290/934e7435332a306212326c55c2a2fc68d5df2f24.jpg');
+  background-size: auto 100vh;
   font-family: Arial;
+  height: 100vh;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 .menu {
   background-color: white;
+}
+
+.menu li {
+  list-style: none;
 }
 
 a {
@@ -17,16 +28,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.menu li {
-  list-style: none;
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
 }
-  
-  .site-title,
-  .site-subtitle {
-    color: whitesmoke; 
-    text-align: center;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-  }
+
+.site-subtitle {
+  font-style: italic;
+}
