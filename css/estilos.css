@@ -90,11 +90,22 @@ a:hover {
   line-height: 0.8em;
 }
 
+.contato,
+.quem-sou,
+.reportagens,
+.experiencia,
+.gradua,
+.certificado,
 .portfolio {
   padding: 2em;
   box-sizing: 1.5em;
 }
 
+.quem-sou h2,
+.reportagens h2,
+.experiencia h2,
+.gradua h2,
+.certificado h2,
 .portfolio h2 {
   font-family: 'Poppins', sans-serif;
   color: whitesmoke; 
