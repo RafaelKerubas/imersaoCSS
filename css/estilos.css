@@ -7,7 +7,7 @@ box-sizing: border-box;
 
 body {
   background-image: url('../img/timeline.gif');
-  background-position: bottom;
+  background-position: initial;
   background-size: auto 100vh;
   background-repeat: no-repeat;
   background-color:	#2F4F4F;
@@ -43,18 +43,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.bg_video{
-	position: fixed; 
-	right: 0; 
-	bottom: 0;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-	height: auto; 
-	z-index: -1000;
-	background-size: cover; 
 }
 
 .menu {
@@ -107,8 +95,6 @@ a:hover {
   }
 }
 
-
-
 .site-subtitle,
 .site-title {
   color: whitesmoke;
@@ -136,6 +122,45 @@ a:hover {
 .portfolio {
   padding: 2em;
   min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (main-width: 1200px) {
+  .contato,
+  .quem-sou,
+  .reportagens,
+  .experiencia,
+  .gradua,
+  .certificado,
+  .portfolio {
+    max-width: 1200px;    
+}
+}
+
+.quem-sou p {
+  color: whitesmoke;
+  text-indent: 2em;
+  margin-bottom: 1.4em;
+  text-align: justify;
+}
+
+.quem-sou a {
+  color: white;
+  text-decoration: underline;
+}
+
+.quem-sou a:hover {
+  color: cyan;
+}
+
+.quem-sou .avatar {
+  margin-left: 2em;
+  float: right;
+}
+
+.quem-sou .avatar img {
+  clip-path: polygon(50% 0%, 100% 40%, 100% 60%, 100% 100%, 68% 99%, 0 68%, 0 0);
 }
 
 .quem-sou h2,
@@ -179,8 +204,37 @@ a:hover {
   transition: transform 500ms;
 }
 
-.img-portfolio:hover {
+/*.img-portfolio:hover {
   transform: scale(1.2);
+}*/
+
+.flip-card {
+perspective: 400%;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);  
+}
+
+.card-front,
+.card-verso {
+  backface-visibility: hidden;
+  left: 0;  
+  position: absolute;
+  top: 0;  
+}
+
+.card-verso {
+ background-color: teal;
+ height: 180px;
+ width: 240px;
+ transform: rotateY(180deg);
 }
 
 .contato .icons {
